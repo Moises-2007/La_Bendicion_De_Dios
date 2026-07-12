@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Comprar | La Bendición de Dios</title>
+
+    <link rel="stylesheet" href="comprar2.css">
+
+    <link rel="icon" href="../logo.png" type="image/png">
+
+</head>
+
+<body>
+    <h1>La Bendicion De Dios</h1>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item">
+                <a href="../Inicio.html" class="nav__link">Inicio</a>
+            </li>
+            <li class="nav__item">
+                <a href="../Menu/Menu.html" class="nav__link">Menu</a>
+            </li>
+            <li class="nav__item">
+                <a href="" class="nav__link">Comprar</a>
+            </li>
+          
+            <li class="nav__item">
+                <a href="../Sesion/Sesion.html" class="nav__link link--button">Iniciar Sesion</a>
+            </li>
+        </ul>
+
+
+    </nav>
+
+    
+    <main>
+
+        <section class="titulo">
+
+            <h2>Carrito de Compras</h2>
+
+            <p>Revisa los productos antes de confirmar tu pedido.</p>
+
+        </section>
+
+        <section class="carrito">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Producto</th>
+
+                        <th>Precio</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="carrito">
+
+                </tbody>
+
+            </table>
+
+            <div class="total">
+
+                <h3>
+
+                    Total: $
+
+                    <span id="total">0</span>
+
+                </h3>
+
+            </div>
+
+            <div class="botones">
+
+                <button onclick="vaciarCarrito()">
+
+                    Vaciar carrito
+
+                </button>
+
+            </div>
+
+        </section>
+
+        <section class="cliente">
+
+            <h2>Información del Cliente</h2>
+
+            <form id="formPedido">
+
+                <label for="nombre">
+
+                    Nombre Completo
+
+                </label>
+
+                <input
+                    type="text"
+                    id="nombre"
+                    required>
+
+                <label for="telefono">
+
+                    Teléfono
+
+                </label>
+
+                <input
+                    type="tel"
+                    id="telefono"
+                    required>
+
+                <label for="direccion">
+
+                    Dirección
+
+                </label>
+
+                <input
+                    type="text"
+                    id="direccion"
+                    required>
+
+                <label for="pago">
+
+                    Método de Pago
+
+                </label>
+
+                <select id="pago" required>
+
+                    <option value="">Seleccione...</option>
+
+                    <option>Efectivo</option>
+
+                    <option>Nequi</option>
+
+                    <option>Daviplata</option>
+
+                </select>
+
+                <button type="submit">
+
+                    Confirmar Pedido
+
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <script src="comprar1.js"></script>
+
+</body>
+
+</html>

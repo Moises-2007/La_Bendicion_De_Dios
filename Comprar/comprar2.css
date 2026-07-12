@@ -1,0 +1,283 @@
+
+body {
+    background-color: beige;
+}
+h1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.nav {
+    background-color: rgb(74, 209, 254);
+    margin: 0 400px 50px 400px ;
+    
+    
+}
+
+.nav__list {
+    margin: 0;
+    padding-left: 200px;
+    
+}
+.nav__item {
+    display: inline-block;
+    padding: 20px 20px 20px 20px;
+   
+    
+}
+.nav__item:hover {
+    background-color: aqua;
+}
+
+.nav__link {
+    color: rgb(9, 17, 24);
+    text-decoration: none;
+}
+.link--button {
+    background-color: rgb(238, 241, 244);
+    padding: 4px 18px ;
+    color: rgb(4, 13, 13);
+    border-radius: 5px;
+    
+
+}
+
+.link--button:hover {
+    background: transparent;
+    color: rgb(5, 16, 25);
+}
+/* ==========================
+   TITULO
+========================== */
+
+.titulo{
+    text-align: center;
+    margin: 40px 20px;
+}
+
+.titulo h2{
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.titulo p{
+    color: #666;
+}
+
+/* ==========================
+   CARRITO
+========================== */
+
+.carrito{
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,.2);
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead{
+    background: #4ad1fe;
+}
+
+thead th{
+    padding: 15px;
+}
+
+tbody td{
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.total{
+    text-align: right;
+    margin-top: 25px;
+}
+
+.total h3{
+    font-size: 28px;
+    color: green;
+}
+
+/* ==========================
+   BOTONES
+========================== */
+
+.botones{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.botones button{
+
+    background: crimson;
+
+    color: white;
+
+    border: none;
+
+    padding: 15px 30px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    transition: .3s;
+
+}
+
+.botones button:hover{
+
+    background: darkred;
+
+}
+
+/* ==========================
+   FORMULARIO
+========================== */
+
+.cliente{
+
+    width: 90%;
+
+    max-width: 700px;
+
+    margin: 50px auto;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+
+}
+
+.cliente h2{
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+}
+
+form{
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+label{
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+
+}
+
+input,
+select{
+
+    padding: 12px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+}
+
+input:focus,
+select:focus{
+
+    outline: none;
+
+    border: 2px solid #4ad1fe;
+
+}
+
+form button{
+
+    padding: 15px;
+
+    background: #ff9800;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    font-size: 18px;
+
+    transition: .3s;
+
+}
+
+form button:hover{
+
+    background: #e68900;
+
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+    .nav__list{
+
+        flex-direction: column;
+
+        gap: 10px;
+
+    }
+
+    table{
+
+        font-size: 14px;
+
+    }
+
+    .titulo h2{
+
+        font-size: 30px;
+
+    }
+
+    .carrito,
+    .cliente{
+
+        width: 95%;
+
+        padding: 20px;
+
+    }
+
+    .total h3{
+
+        font-size: 22px;
+
+    }
+
+}
